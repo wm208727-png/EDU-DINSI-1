@@ -1,0 +1,5 @@
+{
+  "name": "EDU DINSI",
+  "description": "An educational platform providing grade-specific content from Wikipedia with AI-powered translation for students from Grade 1 to 13.",
+  "requestFramePermissions": []
+}

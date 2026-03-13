@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "Rating": {
+      "title": "Rating",
+      "description": "User ratings for the application",
+      "type": "object",
+      "properties": {
+        "rating": {
+          "type": "integer",
+          "description": "Star rating from 1 to 5"
+        },
+        "comment": {
+          "type": "string",
+          "description": "Optional comment from the user"
+        },
+        "userId": {
+          "type": "string",
+          "description": "UID of the user who gave the rating"
+        },
+        "userName": {
+          "type": "string",
+          "description": "Name of the user who gave the rating"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the rating was created"
+        }
+      },
+      "required": ["rating", "userId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "ratings": {
+      "schema": "Rating",
+      "description": "Collection of user ratings"
+    }
+  }
+}
